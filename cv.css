@@ -1,0 +1,80 @@
+body {
+    /* Enlever Padding et Margin */
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* *************************************************
+ * Div class="personnel"
+ ************************************************ */
+.personnel {
+    background-color: #ff0200;
+    width: 30%;
+}
+.personnel > .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.personnel > .photo > a > img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid olive;
+    border-radius: 50%;
+}
+.personnel > .moi {
+    background-color: silver;
+    color: #52ff00;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.personnel > ul {
+    list-style: none;
+}
+ 
+.personnel > p {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* *************************************************
+ * Div class="professionnel"
+ ************************************************ */
+.professionnel {
+    background-color: #bb5194;
+    width: 70%;
+}
+.professionnel .center {
+    border: 3px solid olive;
+    margin: 0 100px;
+}
+
+/* *************************************************
+ * Div class="professionnel" > class center > class formation
+ ************************************************ */
+ .formation li {
+     display: flex;
+ }
+
+ .formation li .ecole {
+    padding: 0 100px;
+}
+
+/* *************************************************
+ * Div class="professionnel" > class center > class experience
+ ************************************************ */
+
+ .experience li {
+    display: flex;
+}
+
+.experience li .ecole {
+   padding: 0 100px;
+}
