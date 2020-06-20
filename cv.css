@@ -21,7 +21,7 @@ body {
     align-items: center;
     padding: 50px 0;
 }
-.personnel > .photo > a > img {
+.personnel > .photo > img {
     width: 150px;
     height: 150px;
     border: 3px solid olive;
@@ -44,6 +44,17 @@ body {
     margin: 20px auto;
 }
 
+.icones {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.icones i {
+    border: 3px solid gold;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 40px;
+}
 /* *************************************************
  * Div class="professionnel"
  ************************************************ */
@@ -56,25 +67,98 @@ body {
     margin: 0 100px;
 }
 
-/* *************************************************
+/* ********************************************************
+ * Div class="professionnel" > class center > class perso
+ ******************************************************* */
+ .perso p {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.perso p > span {
+    color: gold;
+}
+.perso .small {
+    transform: translateY(-50px);
+   font-size: 1.3rem;
+}
+.perso .small > span {
+   background: linear-gradient(to top, #ff000080 0%, #ff000080 2px, transparent 5px);
+} 
+/* *************************************************************
  * Div class="professionnel" > class center > class formation
- ************************************************ */
+ ************************************************************ */
+ .formation .cone {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid gold;
+ }
+ .formation .cone i {
+    font-size: 40px;
+ }
+ .formation .cone h2 {
+    margin-left: 20px;
+    text-transform: uppercase;
+ }
+ 
  .formation li {
      display: flex;
  }
+
+ .formation li .date i {
+    margin-top: 17px;
+    margin-right: 10px;
+    float: left;
+}
+.formation li .date .fa-circle {
+   font-size: 10px;
+   color: gold;
+}
+.formation li .date p {
+   float: right;
+}
 
  .formation li .ecole {
     padding: 0 100px;
 }
 
-/* *************************************************
+/* **************************************************************
  * Div class="professionnel" > class center > class experience
- ************************************************ */
+ ************************************************************* */
+ .experience .cone {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid gold;
+ }
+ .experience .cone i {
+    font-size: 40px;
+ }
+ .experience .cone h2 {
+    margin-left: 20px;
+    text-transform: uppercase;
+ }
 
  .experience li {
     display: flex;
 }
 
+.experience li .date i {
+    margin-top: 17px;
+    margin-right: 10px;
+    float: left;
+}
+ .experience li .date .fa-circle {
+   margin-top: 20px;
+   font-size: 10px;
+   color: gold;
+}
+ .experience li .date p {
+   float: right;
+}
+
 .experience li .ecole {
    padding: 0 100px;
 }
+
+.experience li .ecole-lg {
+    padding: 0 60px;
+ }
