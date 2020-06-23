@@ -4,35 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="cv.css">
+    <!-- Important :
+		SI media all and (max-width: 1024px) avec son fichier css est commentée
+		ALORS le media all and (maw-width: 480px) avec son ficher css NE MARCHARA PAS
+		En clair, pour que le responsive marche,
+		il est obligé qu'il y ait les deux media 1024px et 480px qui marchent 
+		et si il n'y a que le mode mobile et pas le 1024px (mode tablette)
+        alors le responsive ne marchera pas -->
+
+    <!--En bas, le href pour voir le code media query css Largeur maximum 1024px-->
+    <link rel="stylesheet" media="all and (max-width: 1024px)" href="cvTablette.css" />
+    <!--En bas, le href pour voir le code media query css pour Version MOBILE-->
+    <link rel="stylesheet" media="all and (max-width: 650px)" href="cvMobile.css" />
     <title>CV Pierre Chau</title>
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
 </head>
 
 <body>
     <div class="container">
         <div class="personnel">
 
-            <div class="photo">
+            <picture>
+                <source media="(max-width: 650px)" srcset="./img/cut_arkan.jpg">
+                <source media="(max-width: 1024px)" srcset="./img/37715284_10217011276057411_4260207034751778816_n.jpg">
                 <img src="./img/photoprofil1.jpg" alt="photoprofil1" />
-            </div>
+            </picture>
 
             <div class="moi">contact</div>
-            <ul>
-                <li>Adresse</li>
-                <li>Paris, France</li>
-                <br>
-                <li>Téléphone</li>
-                <li>06 00 00 00 00</li>
-                <br>
-                <li>Email</li>
-                <li>nom@mail.com</li>
-                <br>
-                <li>Site Web</li>
-                <li>www.name.com</li>
-                <br>
-                <li>Skype</li>
-                <li>@nom_utilisateur</li>
+            <ul class="liste">
+                <div>
+                    <div>
+                        <li>Adresse</li>
+                        <li>Paris, France</li>
+                        <br>
+                    </div>
+
+                    <div>
+                        <li>Téléphone</li>
+                        <li>06 00 00 00 00</li>
+                        <br>
+                    </div>
+
+                    <div>
+                        <li>Email</li>
+                        <li>nom@mail.com</li>
+                        <br>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="web">
+                        <li>Site Web</li>
+                        <li>www.name.com</li>
+                        <br>
+                    </div>
+
+                    <div class="skype">
+                        <li>Skype</li>
+                        <li>@nom_utilisateur</li>
+                    </div>
+                </div>
             </ul>
 
             <div class="moi">à propos de moi</div>
@@ -47,23 +81,27 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
 
-            <div class="moi">loisirs</div>
-            <div class="icones">
-                <i class="fas fa-running"></i>
-                <i class="fas fa-dumbbell"></i>
+            <div class="loisir">
+                <div class="moi">loisirs</div>
+                <div class="icones">
+                    <i class="fas fa-running"></i>
+                    <i class="fas fa-dumbbell"></i>
+                </div>
             </div>
 
-        </div>
+        </div> <!-- FIN DE div class="personnel" -->
 
         <div class="professionnel">
             <div class="center">
                 <section class="perso">
                     <p><span>pierre</span> chau<br>
-                        <div class="small"><span>Ancien Boulanger-Pâtissier</span> en pleine reconversion professionnelle<div>
+                        <div class="small">
+                            <span>Ancien Boulanger-Pâtissier</span> en pleine reconversion professionnelle
+                        </div>
                     </p>
-                </section>
+                </section> <!-- FIN DE section class="perso" -->
 
-                <section class="formation">  
+                <section class="formation">
                     <div class="cone">
                         <i class="fas fa-graduation-cap"></i>
                         <h2>formation</h2>
@@ -86,7 +124,7 @@
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2008 à Juin 2009<br>
-                                    Paris 19e</strong>
+                                        Paris 19e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
@@ -98,7 +136,7 @@
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2006 à Juin 2008<br>
-                                    Paris 19e</strong>
+                                        Paris 19e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
@@ -110,7 +148,7 @@
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2003 à Juin 2006<br>
-                                    Paris 3e</strong>
+                                        Paris 3e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
@@ -119,13 +157,13 @@
                             </div>
                         </li>
                     </ul>
-                </section>
+                </section> <!-- FIN DE section class="formation" -->
 
                 <section class="experience">
                     <div class="cone">
                         <i class="fas fa-briefcase"></i>
-                        <h2>expérience professionnelle</h2> 
-                    </div>                
+                        <h2>expérience professionnelle</h2>
+                    </div>
 
                     <ul>
                         <li>
@@ -148,7 +186,7 @@
                                     <strong>De Septembre 2011 à Novembre 2011<br>
                                         Paris 14e</strong>
                                 </p>
-                                    
+
                             </div>
                             <div class="ecole-lg">
                                 <h2>Le Fournil du Maine</h2>
@@ -195,7 +233,7 @@
                             </div>
                         </li>
                     </ul>
-                </section>
+                </section> <!-- FIN DE section class="experience" -->
 
                 <section>
                     <h2>compétences</h2>
@@ -209,9 +247,11 @@
                         <li>Surveiller de la cuisson des viennoiseries et autres produits sucrés </li>
                     </ul>
                 </section>
-            </div>
-        </div>
-    </div>
+            </div> <!-- FIN DE div class="center" -->
+
+        </div> <!-- FIN DE div class="professionnel" -->
+
+    </div> <!-- FIN DE div class="container" -->
 
 </body>
 
