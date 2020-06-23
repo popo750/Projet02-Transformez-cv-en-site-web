@@ -5,7 +5,7 @@ body {
     position: relative;
 }
 
-.container {
+#container {
     display: flex;
 }
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    margin: 50px auto;
 }
 
 .personnel picture > img {
@@ -32,8 +32,7 @@ body {
 }
 
 .personnel > .moi,
-.personnel > .loisir .moi
- {
+.personnel > .loisir .moi {
     background-color: #3E2723;
     color: #52ff00;
     padding: 10px 0;
@@ -53,7 +52,7 @@ body {
 .personnel > .liste {
     list-style: none;
 }
- 
+
 .personnel > p {
     width: 80%;
     margin: 20px auto;
@@ -88,7 +87,7 @@ body {
 /* ********************************************************
  * Div class="professionnel" > class center > class perso
  ******************************************************* */
- .perso p {
+.perso p {
     text-transform: uppercase;
     font-size: 50px;
 }
@@ -99,71 +98,73 @@ body {
 
 .perso .small {
     transform: translateY(-50px);
-   font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .perso .small > span {
-   background: linear-gradient(to top, #ff000080 0%, #ff000080 2px, transparent 5px);
-} 
+    background: linear-gradient(to top, #ff000080 0%, #ff000080 2px, transparent 5px);
+}
 
 /* *************************************************************
  * Div class="professionnel" > class center > class formation
  ************************************************************ */
- .formation .cone {
+.formation .cone {
     display: flex;
     align-items: center;
     border-bottom: 3px solid gold;
- }
+}
 
- .formation .cone i {
+.formation .cone i {
     font-size: 40px;
- }
+}
 
- .formation .cone h2 {
+.formation .cone h2 {
     margin-left: 20px;
     text-transform: uppercase;
- }
- 
- .formation li {
-     display: flex;
- }
+}
 
- .formation li .date i {
+.formation li {
+    display: flex;
+}
+
+.formation li .date i {
     margin-top: 17px;
     margin-right: 10px;
     float: left;
 }
+
 .formation li .date .fa-circle {
-   font-size: 10px;
-   color: gold;
-}
-.formation li .date p {
-   float: right;
+    font-size: 10px;
+    color: gold;
 }
 
- .formation li .ecole {
+.formation li .date p {
+    float: right;
+}
+
+.formation li .ecole {
     padding: 0 100px;
 }
 
 /* **************************************************************
  * Div class="professionnel" > class center > class experience
  ************************************************************* */
- .experience .cone {
+.experience .cone {
     display: flex;
     align-items: center;
     border-bottom: 3px solid gold;
- }
+}
 
- .experience .cone i {
+.experience .cone i {
     font-size: 40px;
- }
+}
 
- .experience .cone h2 {
+.experience .cone h2 {
     margin-left: 20px;
     text-transform: uppercase;
- }
+}
 
- .experience li {
+.experience li {
     display: flex;
 }
 
@@ -173,20 +174,20 @@ body {
     float: left;
 }
 
- .experience li .date .fa-circle {
-   margin-top: 20px;
-   font-size: 10px;
-   color: gold;
+.experience li .date .fa-circle {
+    margin-top: 20px;
+    font-size: 10px;
+    color: gold;
 }
 
- .experience li .date p {
-   float: right;
+.experience li .date p {
+    float: right;
 }
 
 .experience li .ecole {
-   padding: 0 100px;
+    padding: 0 100px;
 }
 
 .experience li .ecole-lg {
     padding: 0 60px;
- }
+}
