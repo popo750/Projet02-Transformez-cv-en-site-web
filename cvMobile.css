@@ -103,15 +103,15 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         border-bottom: 3px solid gold;
     }
 
-    .formation li:nth-child(2) {
+    .formation .school:nth-child(2) {
         border-bottom: 3px solid gold;
     }
 
-    .formation li:nth-child(3) {
+    .formation .school:nth-child(3) {
         border-bottom: 3px solid gold;
     }
 
-    .formation li:nth-child(4) {
+    .formation .school:nth-child(4) {
         border-bottom: 3px solid gold;
     }
 
@@ -160,7 +160,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     .experience .exp .date-lg > i {
         display: none;
     }
-    
+
     .experience .exp .ecole > h2 {
         font-size: 20px;
     }
