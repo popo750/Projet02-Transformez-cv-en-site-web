@@ -34,11 +34,53 @@
             </picture>
 
             <div class="moi">contact</div>
-            <ul class="liste">
+            <div class="liste">
+                <div>
+                    <div>
+                        <span>Adresse</span><br>
+                        <span>Paris, France</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <span>Téléphone</span><br>
+                        <span>06 00 00 00 00</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <span>Email</span><br>
+                        <span>nom@mail.com</span>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="web">
+                        <span>Site Web</span><br>
+                        <span>www.name.com</span>
+                        <br><br>
+                    </div>
+
+                    <div class="skype">
+                        <span>Skype</span><br>
+                        <span>@nom_utilisateur</span>
+                    </div>
+                </div>
+            </div>
+                        <!-- Ce code ci-dessous 
+                "div > div > div > li" ( li avec div pas compatible ),
+                lang= en (a cause du lorem ipsum)
+                et
+                section class="xx"
+                affichent avec le validateur w3c : error 
+                 -->
+            <!--
+            <div class="liste">
                 <div>
                     <div>
                         <li>Adresse</li>
-                        <li>Paris, France</li>
+                        <li>France</li>
                         <br>
                     </div>
 
@@ -67,8 +109,8 @@
                         <li>@nom_utilisateur</li>
                     </div>
                 </div>
-            </ul>
-
+            </div> -->
+            
             <div class="moi">à propos de moi</div>
             <p>
                 "Lorem ipsum dolor sit amet,
@@ -93,22 +135,22 @@
 
         <div class="professionnel">
             <div class="center">
-                <section class="perso">
-                    <p><span>pierre</span> chau<br>
-                        <div class="small">
-                            <span>Ancien Boulanger-Pâtissier</span> en pleine reconversion professionnelle
-                        </div>
-                    </p>
-                </section> <!-- FIN DE section class="perso" -->
+                <sdiv class="perso">
+                    <p><span>pierre</span> chau</p>
+                    <div class="small">
+                        <span>Ancien Boulanger-Pâtissier</span> en pleine reconversion professionnelle
+                    </div>
+                </sdiv> <!-- FIN DE div class="perso" -->
 
-                <section class="formation">
+
+                <div class="formation">
                     <div class="cone">
                         <i class="fas fa-graduation-cap"></i>
                         <h2>formation</h2>
                     </div>
 
-                    <ul>
-                        <li>
+                    <div>
+                        <div class="school">
                             <div class="date">
                                 <i class="far fa-dot-circle"></i>
                                 <p><strong>De Septembre 2009 à Juin 2011<br>
@@ -118,9 +160,15 @@
                             <div class="ecole">
                                 <h2>CEPROC</h2>
                                 <p>Baccalauréat Professionnel de Boulangerie-Pâtisserie</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="school">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2008 à Juin 2009<br>
@@ -130,9 +178,15 @@
                             <div class="ecole">
                                 <h2>CEPROC</h2>
                                 <p>Mention Complémentaire Pâtisserie</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="school">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2006 à Juin 2008<br>
@@ -142,9 +196,15 @@
                             <div class="ecole">
                                 <h2>CEPROC</h2>
                                 <p>Brevet des Etudes Professionnelles</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="school">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2003 à Juin 2006<br>
@@ -154,19 +214,25 @@
                             <div class="ecole">
                                 <h2>Lycée Turgot</h2>
                                 <p>Niveau Baccalauréat Scientifique</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                    </ul>
-                </section> <!-- FIN DE section class="formation" -->
+                        </div>
+                    </div>
+                </div> <!-- FIN DE div class="formation" -->
 
-                <section class="experience">
+                <div class="experience">
                     <div class="cone">
                         <i class="fas fa-briefcase"></i>
                         <h2>expérience professionnelle</h2>
                     </div>
 
-                    <ul>
-                        <li>
+                    <div class="listeExp">
+                        <div class="exp">
                             <div class="date">
                                 <i class="far fa-dot-circle"></i>
                                 <p>
@@ -177,9 +243,15 @@
                             <div class="ecole">
                                 <h2>Le Fournil du Maine</h2>
                                 <p>Poste Tourier et Boulanger</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="exp">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p>
@@ -191,9 +263,15 @@
                             <div class="ecole-lg">
                                 <h2>Le Fournil du Maine</h2>
                                 <p>Poste Tourier</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="exp">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p>
@@ -204,9 +282,15 @@
                             <div class="ecole">
                                 <h2>Le Grenier à Pain</h2>
                                 <p>Apprenti Pâtissier</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="exp">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p>
@@ -217,9 +301,15 @@
                             <div class="ecole">
                                 <h2>DI.PRO.SUC.</h2>
                                 <p>Apprenti Pâtissier</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="exp">
                             <div class="date">
                                 <i class="fas fa-circle"></i>
                                 <p>
@@ -230,29 +320,45 @@
                             <div class="ecole">
                                 <h2>Le Pralin</h2>
                                 <p>Apprenti Pâtissier</p>
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
-                        </li>
-                    </ul>
-                </section> <!-- FIN DE section class="experience" -->
+                        </div>
+                    </div>
+                </div> <!-- FIN DE div class="experience" -->
 
-                <section>
-                    <h2>compétences</h2>
-                    <ul>
-                        <li>Réaliser les recettes de pâtes de boulangerie-pâtisserie (Exemples: Pâte à croissants, pâte
-                            feuilletée, pâte sucrée,etc...)</li>
-                        <li>Réaliser les crèmes de pâtisserie (exemples: la crème pâtissiere, la crème d'amandes)</li>
-                        <li>Façonner les baguettes, les viennoiseries (Croissants, pains au chocolat, etc...), les
-                            tartes.
-                        </li>
-                        <li>Surveiller de la cuisson des viennoiseries et autres produits sucrés </li>
-                    </ul>
-                </section>
+                <div class="recommandation">
+                    <div class="cone">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h2>recommandations</h2>
+                    </div>
+
+                    <div class="agence">
+                        <div class="name">
+                            <h3>maxime orwellien</h3>
+                            <span>Directeur, Mon agence</span><br>
+                            <span>Téléphone :</span><br>
+                            <span>Email : name@gmail.com</span>
+                        </div>
+
+                        <div class="name">
+                            <h3>maxime orwellien</h3>
+                            <span>Directeur, Mon agence</span><br>
+                            <span>Téléphone :</span><br>
+                            <span>Email : name@gmail.com</span>
+                        </div>
+                    </div>
+                </div> <!-- FIN DE div class="recommandation" -->
+
             </div> <!-- FIN DE div class="center" -->
 
         </div> <!-- FIN DE div class="professionnel" -->
 
     </div> <!-- FIN DE div id="container" -->
-
 </body>
 
 </html>

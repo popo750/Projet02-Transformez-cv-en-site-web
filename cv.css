@@ -50,6 +50,7 @@ body {
 }
 
 .personnel > .liste {
+    padding: 30px;
     list-style: none;
 }
 
@@ -67,7 +68,7 @@ body {
 .icones i {
     border: 3px solid gold;
     border-radius: 50%;
-    padding: 20px;
+    padding: 10px;
     font-size: 40px;
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .professionnel .center {
-    border: 3px solid olive;
+    /* border: 3px solid olive; */
     margin: 0 100px;
 }
 
@@ -123,27 +124,32 @@ body {
     text-transform: uppercase;
 }
 
-.formation li {
+.formation .school {
     display: flex;
 }
 
-.formation li .date i {
+.formation .school .date {
+    width: 35%;
+}
+
+.formation .school .date i {
     margin-top: 17px;
     margin-right: 10px;
     float: left;
 }
 
-.formation li .date .fa-circle {
+.formation .school .date .fa-circle {
     font-size: 10px;
     color: gold;
 }
 
-.formation li .date p {
+.formation .school .date p {
     float: right;
 }
 
-.formation li .ecole {
+.formation .school .ecole {
     padding: 0 100px;
+    width: 60%;
 }
 
 /* **************************************************************
@@ -164,30 +170,70 @@ body {
     text-transform: uppercase;
 }
 
-.experience li {
+.experience .exp {
     display: flex;
 }
 
-.experience li .date i {
+.experience .exp .date,
+.experience .exp .date-lg {
+    width: 35%;
+}
+
+.experience .exp .date i,
+.experience .exp .date-lg i {
     margin-top: 17px;
-    margin-right: 10px;
     float: left;
 }
 
-.experience li .date .fa-circle {
+.experience .exp .date .fa-circle,
+.experience .exp .date-lg .fa-circle {
     margin-top: 20px;
     font-size: 10px;
     color: gold;
 }
 
-.experience li .date p {
+.experience .exp .date p,
+.experience .exp .date-lg p {
     float: right;
 }
 
-.experience li .ecole {
-    padding: 0 100px;
+.experience .exp .date-lg p {
+    margin-right: -40px;
 }
 
-.experience li .ecole-lg {
-    padding: 0 60px;
+.experience .exp .ecole {
+    padding: 0 100px;
+    width: 60%;
+}
+
+/* ****************************************************************
+ * Div class="professionnel" > class center > class recommandation
+ *************************************************************** */
+ .recommandation .cone {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+.recommandation .cone i {
+    font-size: 40px;
+}
+
+.recommandation .cone h2 {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.agence {
+    display: flex;
+    list-style: none;
+}
+
+.agence div {
+    width: 40%;
+    height: 200px;
+}
+
+.agence div h3 {
+    text-transform: uppercase;
 }

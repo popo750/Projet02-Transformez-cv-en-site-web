@@ -104,14 +104,13 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         font-size: 20px;
     }
 
-    .formation li .ecole > h2 {
+    .formation .school .ecole > h2 {
         font-size: 20px;
     }
 
     /* *************************************************************
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
-
     .experience .cone i {
         font-size: 30px;
     }
@@ -120,12 +119,17 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         font-size: 20px;
     }
 
-    .experience li .ecole > h2 {
+    .experience .exp .ecole > h2 {
         font-size: 20px;
     }
 
-    .experience li .ecole-lg > h2 {
-        font-size: 20px;
+    /* ************************************************************
+    * Div class="professionnel" > class center > class recommandation
+    ************************************************************ */
+    .recommandation .agence {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
 }

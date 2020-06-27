@@ -42,13 +42,15 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         color: #1976D2;
     }
 
-    .personnel > .liste > div .web 
-    {
+    .personnel > .liste {
+        margin-left: 10px;
+    }
+
+    .personnel > .liste > div .web {
         margin-left: 50px;
     }
 
-    .personnel > .liste > div .skype
-    {
+    .personnel > .liste > div .skype {
         margin-right: 50px;
     }
 
@@ -83,50 +85,96 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     /* ************************************************************
     * Div class="professionnel" > class center > class formation
     ************************************************************ */
-    .formation li:nth-child(2) {
+    .formation .cone {
+        background-color: #1E88E5;
         border-top: 3px solid gold;
+    }
+
+    .formation .school {
+        margin: 0 20px;
+    }
+
+    .formation .school .date,
+    .formation .school .ecole {
+        padding: 0 20px;
+    }
+
+    .formation .school:nth-child(1) {
+        border-bottom: 3px solid gold;
+    }
+
+    .formation li:nth-child(2) {
+        border-bottom: 3px solid gold;
     }
 
     .formation li:nth-child(3) {
-        border-top: 3px solid gold;
+        border-bottom: 3px solid gold;
     }
 
     .formation li:nth-child(4) {
-        border-top: 3px solid gold;
+        border-bottom: 3px solid gold;
     }
 
-    .formation li .date > i {
+    .formation .school .date > i {
         display: none;
     }
 
-    .formation li .ecole > h2 {
+    .formation .school .ecole > h2 {
         font-size: 20px;
     }
 
     /* ************************************************************
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
-    .experience li:nth-child(2) {
-        border-top: 3px solid gold;
+    .experience .cone {
+        background-color: #AB47BC;
     }
 
-    .experience li:nth-child(3) {
-        border-top: 3px solid gold;
+    .experience .exp {
+        margin: 0 20px;
     }
 
-    .experience li:nth-child(4) {
-        border-top: 3px solid gold;
+    .experience .exp .date,
+    .experience .exp .date-lg,
+    .experience .exp .ecole {
+        padding: 0 20px;
     }
 
-    .experience li:nth-child(5) {
-        border-top: 3px solid gold;
+    .experience .exp:nth-child(1) {
+        border-bottom: 3px solid gold;
+    }
+    
+    .experience .exp:nth-child(2) {
+        border-bottom: 3px solid gold;
     }
 
-    .experience li .date > i {
+    .experience .exp:nth-child(3) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp:nth-child(4) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp .date > i,
+    .experience .exp .date-lg > i {
         display: none;
     }
-    .experience li .ecole > h2 {
+    
+    .experience .exp .ecole > h2 {
         font-size: 20px;
+    }
+
+    /* *************************************************************
+    * Div class="professionnel" > class center > class recommandation
+    ************************************************************* */
+    .recommandation .cone {
+        border-top: 3px solid gold;
+        background-color: #ef5350;
+    }
+
+    .recommandation .agence .name {
+        padding: 0 20px;
     }
 
 }
