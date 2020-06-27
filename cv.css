@@ -138,9 +138,17 @@ body {
     float: left;
 }
 
+.formation .school .date .fa-dot-circle,
+.formation .school .date .fa-circle {
+    color: gold;
+}
+
+.formation .school .date .fa-dot-circle {
+    font-size: 20px;
+}
+
 .formation .school .date .fa-circle {
     font-size: 10px;
-    color: gold;
 }
 
 .formation .school .date p {
@@ -185,11 +193,16 @@ body {
     float: left;
 }
 
+.experience .exp .date .fa-dot-circle,
 .experience .exp .date .fa-circle,
 .experience .exp .date-lg .fa-circle {
     margin-top: 20px;
     font-size: 10px;
     color: gold;
+}
+
+.experience .exp .date .fa-dot-circle {
+    font-size: 20px;
 }
 
 .experience .exp .date p,

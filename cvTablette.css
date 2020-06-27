@@ -96,12 +96,33 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     /* *************************************************************
     * Div class="professionnel" > class center > class formation
     ************************************************************** */
+    .formation .cone {
+        background-color: #1565C0;
+        border-top: 3px solid gold;
+    }
+    
     .formation .cone i {
         font-size: 30px;
     }
 
     .formation .cone h2 {
         font-size: 20px;
+    }
+
+    .formation .school:nth-child(1) {
+        border-bottom: 3px solid gold;
+    }
+
+    .formation .school:nth-child(2) {
+        border-bottom: 3px solid gold;
+    }
+
+    .formation .school:nth-child(3) {
+        border-bottom: 3px solid gold;
+    }
+
+    .formation .school .date > i {
+        display: none;
     }
 
     .formation .school .ecole > h2 {
@@ -111,12 +132,38 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     /* *************************************************************
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
+    .experience .cone {
+        border-top: 3px solid gold;
+        background-color: #4527A0;
+    }
+    
     .experience .cone i {
         font-size: 30px;
     }
 
     .experience .cone h2 {
         font-size: 20px;
+    }
+
+    .experience .exp:nth-child(1) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp:nth-child(2) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp:nth-child(3) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp:nth-child(4) {
+        border-bottom: 3px solid gold;
+    }
+
+    .experience .exp .date > i,
+    .experience .exp .date-lg > i {
+        display: none;
     }
 
     .experience .exp .ecole > h2 {
@@ -126,6 +173,11 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     /* ************************************************************
     * Div class="professionnel" > class center > class recommandation
     ************************************************************ */
+    .recommandation .cone {
+        border-top: 3px solid gold;
+        background-color: #c62828;
+    }
+
     .recommandation .agence {
         display: flex;
         justify-content: center;
