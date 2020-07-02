@@ -89,8 +89,8 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     * Div class="professionnel" > class center > class formation
     ************************************************************** */
     .formation .cone {
-        background-color: var(--color-secondary-first);
-        color: var(--color-secondary-second);
+        background-color: #FB8C00;
+        color: #3E2723;
         border-bottom: none;
     }
     
@@ -104,15 +104,15 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     }
 
     .formation .school:nth-child(1) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .formation .school:nth-child(2) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .formation .school:nth-child(3) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .formation .school .date > i {
@@ -127,8 +127,8 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
     .experience .cone {
-        background-color: var(--color-secondary-first);
-        color: var(--color-secondary-second);
+        background-color: #FB8C00;
+        color: #3E2723;
         border-bottom: none;
     }
     
@@ -142,19 +142,19 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     }
 
     .experience .exp:nth-child(1) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .experience .exp:nth-child(2) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .experience .exp:nth-child(3) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .experience .exp:nth-child(4) {
-        border-bottom: 3px solid var(--color-secondary-first);
+        border-bottom: 3px solid #FB8C00;
     }
 
     .experience .exp .date > i,
@@ -170,8 +170,8 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     * Div class="professionnel" > class center > class recommandation
     ************************************************************ */
     .recommandation .cone {
-        background-color: var(--color-secondary-first);
-        color: var(--color-secondary-second);
+        background-color: #FB8C00;
+        color: #3E2723;
         border-bottom: none;
     }
 
