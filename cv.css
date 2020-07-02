@@ -1,3 +1,9 @@
+:root {
+    --color-primary: #43A047;
+    --color-secondary-first: #FB8C00;
+    --color-secondary-second: #3E2723;
+}
+
 body {
     /* Enlever Padding et Margin */
     padding: 0;
@@ -13,7 +19,7 @@ body {
  * Div class="personnel"
  ************************************************ */
 .personnel {
-    background-color: #b71c1c;
+    background-color: var(--color-primary);
     width: 30%;
 }
 
@@ -27,14 +33,14 @@ body {
 .personnel picture > img {
     width: 150px;
     height: 150px;
-    border: 3px solid olive;
+    border: 3px solid var(--color-secondary-first);
     border-radius: 50%;
 }
 
 .personnel > .moi,
 .personnel > .loisir .moi {
-    background-color: #3E2723;
-    color: #52ff00;
+    background-color: var(--color-secondary-second);
+    color: var(--color-secondary-first);
     padding: 10px 0;
     text-transform: uppercase;
     text-align: center;
@@ -66,7 +72,7 @@ body {
 }
 
 .icones i {
-    border: 3px solid gold;
+    border: 3px solid var(--color-secondary-first);
     border-radius: 50%;
     padding: 10px;
     font-size: 40px;
@@ -76,7 +82,7 @@ body {
  * Div class="professionnel"
  ************************************************ */
 .professionnel {
-    background-color: #66BB6A;
+    background-color: #fff;
     width: 70%;
 }
 
@@ -94,7 +100,7 @@ body {
 }
 
 .perso p > span {
-    color: gold;
+    color: var(--color-secondary-first);
 }
 
 .perso .small {
@@ -103,7 +109,7 @@ body {
 }
 
 .perso .small > span {
-    background: linear-gradient(to top, #ff000080 0%, #ff000080 2px, transparent 5px);
+    background: linear-gradient(to top, var(--color-secondary-first) 0%, var(--color-secondary-first) 2px, transparent 5px);
 }
 
 /* *************************************************************
@@ -112,7 +118,7 @@ body {
 .formation .cone {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid gold;
+    border-bottom: 3px solid var(--color-secondary-first);
 }
 
 .formation .cone i {
@@ -140,7 +146,7 @@ body {
 
 .formation .school .date .fa-dot-circle,
 .formation .school .date .fa-circle {
-    color: gold;
+    color: var(--color-secondary-first);
 }
 
 .formation .school .date .fa-dot-circle {
@@ -166,7 +172,7 @@ body {
 .experience .cone {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid gold;
+    border-bottom: 3px solid var(--color-secondary-first);
 }
 
 .experience .cone i {
@@ -198,7 +204,7 @@ body {
 .experience .exp .date-lg .fa-circle {
     margin-top: 20px;
     font-size: 10px;
-    color: gold;
+    color: var(--color-secondary-first);
 }
 
 .experience .exp .date .fa-dot-circle {
@@ -225,7 +231,7 @@ body {
  .recommandation .cone {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid gold;
+    border-bottom: 3px solid var(--color-secondary-first);
 }
 
 .recommandation .cone i {

@@ -20,11 +20,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     /* *************************************************
     * Div class="personnel"
     ************************************************ */
-    .personnel {
-        background-color: #FF3D00;
-        width: 100%;
-    }
-    
+
     .personnel picture {
         margin: 0;
         height: 200px;
@@ -36,11 +32,6 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         border: none;
         border-radius: 0;
     } 
-
-    .personnel > .moi {
-        background-color: #3E2723;
-        color: #1976D2;
-    }
 
     .personnel > .liste {
         margin-left: 10px;
@@ -54,41 +45,9 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         margin-right: 50px;
     }
 
-    .icones i {
-        padding: 10px;
-        font-size: 30px;
-    }
-
-    /* *************************************************
-    * Div class="professionnel"
-    ************************************************ */
-    .professionnel {
-        background-color: #66BB6A;
-    }
-
-    .professionnel .center {
-        border: none;
-        margin: 0;
-    }
-
-    /* **********************************************************
-    * Div class="professionnel" > class center > class perso
-    ********************************************************** */
-    .perso p {
-        font-size: 40px;
-    }
-
-    .perso .small {
-        font-size: 1.1rem;
-    }
-
     /* ************************************************************
     * Div class="professionnel" > class center > class formation
     ************************************************************ */
-    .formation .cone {
-        background-color: #1E88E5;
-        border-top: 3px solid gold;
-    }
 
     .formation .school {
         margin: 0 20px;
@@ -99,36 +58,9 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         padding: 0 20px;
     }
 
-    .formation .school:nth-child(1) {
-        border-bottom: 3px solid gold;
-    }
-
-    .formation .school:nth-child(2) {
-        border-bottom: 3px solid gold;
-    }
-
-    .formation .school:nth-child(3) {
-        border-bottom: 3px solid gold;
-    }
-
-    .formation .school:nth-child(4) {
-        border-bottom: 3px solid gold;
-    }
-
-    .formation .school .date > i {
-        display: none;
-    }
-
-    .formation .school .ecole > h2 {
-        font-size: 20px;
-    }
-
     /* ************************************************************
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
-    .experience .cone {
-        background-color: #AB47BC;
-    }
 
     .experience .exp {
         margin: 0 20px;
@@ -140,38 +72,9 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         padding: 0 20px;
     }
 
-    .experience .exp:nth-child(1) {
-        border-bottom: 3px solid gold;
-    }
-    
-    .experience .exp:nth-child(2) {
-        border-bottom: 3px solid gold;
-    }
-
-    .experience .exp:nth-child(3) {
-        border-bottom: 3px solid gold;
-    }
-
-    .experience .exp:nth-child(4) {
-        border-bottom: 3px solid gold;
-    }
-
-    .experience .exp .date > i,
-    .experience .exp .date-lg > i {
-        display: none;
-    }
-
-    .experience .exp .ecole > h2 {
-        font-size: 20px;
-    }
-
     /* *************************************************************
     * Div class="professionnel" > class center > class recommandation
     ************************************************************* */
-    .recommandation .cone {
-        border-top: 3px solid gold;
-        background-color: #ef5350;
-    }
 
     .recommandation .agence .name {
         padding: 0 20px;
