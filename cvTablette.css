@@ -96,6 +96,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     
     .formation .cone i {
         font-size: 30px;
+        margin-left: 20px;
     }
 
     .formation .cone h2 {
@@ -133,6 +134,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     
     .experience .cone i {
         font-size: 30px;
+        margin-left: 20px;
     }
 
     .experience .cone h2 {
@@ -175,6 +177,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
     .recommandation .cone i {
         font-size: 30px;
+        margin-left: 20px;
     }
 
     .recommandation .cone h2 {
