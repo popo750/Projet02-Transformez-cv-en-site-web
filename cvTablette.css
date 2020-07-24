@@ -9,11 +9,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
 /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 @media all and (max-width: 1024px) {
-    body {
-        position: absolute;
-        width: auto;
-    }
-    
+
     #container {
         flex-direction: column;
     }
@@ -24,47 +20,46 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
     .personnel {
         width: 100%;
     }
-    
+
     .personnel picture {
         margin: 10px auto;
     }
 
-    .personnel > .loisir {
-        position: relative;
-        width: 100%;
-    }
-
-    .personnel > .liste {
+    .personnel>.liste {
         margin-left: -50px;
     }
 
-    .personnel > .liste > div {
+    .personnel>.liste>div {
         display: flex;
         justify-content: space-around;
         align-content: space-around;
     }
-    
-    .personnel > .liste > div .web 
-    {
+
+    .personnel>.liste>div .web {
         margin-left: 100px;
     }
 
-    .personnel > .liste > div .skype
-    {
+    .personnel>.liste>div .skype {
         margin-right: 100px;
     }
-    
+
+    .personnel>.loisir {
+        position: relative;
+        width: 100%;
+    }
+
     .icones i {
         padding: 10px;
         font-size: 30px;
     }
 
-    /* ************************************************
+    /* *************************************************
     * Div class="professionnel"
     ************************************************ */
     .professionnel {
         width: 100%;
     }
+
     /*
     .professionnel .center {
         border: none;
@@ -72,37 +67,89 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
     /* *******************************************************
     * Div class="professionnel" > class center > class perso
-    ******************************************************* */
+    ******************************************************** */
     .perso {
         text-align: center;
-    }
-
-    .perso p {
-        font-size: 40px;
     }
 
     .perso .small {
         font-size: 1.1rem;
     }
 
-    /* *************************************************************
-    * Div class="professionnel" > class center > class formation
-    ************************************************************** */
-    .formation .cone {
+    /* ************************************************************
+     * Regroupement des propriétés css des class :
+     * class Formation ET class Experience ET class recommandation
+     * PAR
+     * section .cone XXX
+     *********************************************************** */
+    /* Ancien code */
+    /*
+    .formation .cone,
+    .experience .cone,
+    .recommandation .cone {
+        background-color: #FB8C00;
+        color: #3E2723;
+        border-bottom: none;
+    } */
+
+    section .cone {
         background-color: #FB8C00;
         color: #3E2723;
         border-bottom: none;
     }
-    
-    .formation .cone i {
+
+    /* Ancien code */
+    /*
+    .formation .cone i,
+    .experience .cone i,
+    .recommandation .cone i {
+        font-size: 30px;
+        margin-left: 20px;
+    } */
+
+    section .cone i {
         font-size: 30px;
         margin-left: 20px;
     }
 
-    .formation .cone h2 {
+    /* Ancien code */
+    /*
+    .formation .cone h2,
+    .experience .cone h2,
+    .recommandation .cone h2 {
+        font-size: 20px;
+    } */
+
+    section .cone h2 {
         font-size: 20px;
     }
 
+    /* Ancien code */
+    /*
+    .formation .school .date-nor>i,
+    .formation .school .date-lg>i,
+    .experience .exp .date-nor>i,
+    .experience .exp .date-lg>i {
+        display: none;
+    } */
+
+    section .flexbox .date>i {
+        display: none;
+    }
+
+    /* Ancien code */
+    /*
+    .formation .school .ecole>h2,
+    .experience .exp .ecole>h2 {
+        font-size: 20px;
+    } */
+
+    section .flexbox .ecole>h2 {
+        font-size: 20px;
+    }
+
+    /* Ancien code */
+    /*
     .formation .school:nth-child(1) {
         border-bottom: 3px solid #FB8C00;
     }
@@ -113,34 +160,14 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
     .formation .school:nth-child(3) {
         border-bottom: 3px solid #FB8C00;
+    } */
+
+    .formation .school:not(:nth-child(4)) {
+        border-bottom: 3px solid #FB8C00;
     }
 
-    .formation .school .date > i {
-        display: none;
-    }
-
-    .formation .school .ecole > h2 {
-        font-size: 20px;
-    }
-
-    /* *************************************************************
-    * Div class="professionnel" > class center > class experience
-    ************************************************************* */
-    .experience .cone {
-        background-color: #FB8C00;
-        color: #3E2723;
-        border-bottom: none;
-    }
-    
-    .experience .cone i {
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    .experience .cone h2 {
-        font-size: 20px;
-    }
-
+    /* Ancien code */
+    /*
     .experience .exp:nth-child(1) {
         border-bottom: 3px solid #FB8C00;
     }
@@ -155,33 +182,10 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
     .experience .exp:nth-child(4) {
         border-bottom: 3px solid #FB8C00;
-    }
+    } */
 
-    .experience .exp .date > i,
-    .experience .exp .date-lg > i {
-        display: none;
-    }
-
-    .experience .exp .ecole > h2 {
-        font-size: 20px;
-    }
-
-    /* ************************************************************
-    * Div class="professionnel" > class center > class recommandation
-    ************************************************************ */
-    .recommandation .cone {
-        background-color: #FB8C00;
-        color: #3E2723;
-        border-bottom: none;
-    }
-
-    .recommandation .cone i {
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    .recommandation .cone h2 {
-        font-size: 20px;
+    .experience .exp:not(:nth-child(5)) {
+        border-bottom: 3px solid #FB8C00;
     }
 
     .recommandation .agence {

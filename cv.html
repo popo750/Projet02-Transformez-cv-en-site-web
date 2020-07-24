@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,9 +15,9 @@
         alors le responsive ne marchera pas -->
 
     <!--En bas, le href pour voir le code media query css Largeur maximum 1024px-->
-    <link rel="stylesheet" media="all and (max-width: 1024px)" href="cvTablette.css" />
+    <link rel="stylesheet" href="cvTablette.css" />
     <!--En bas, le href pour voir le code media query css pour Version MOBILE-->
-    <link rel="stylesheet" media="all and (max-width: 650px)" href="cvMobile.css" />
+    <link rel="stylesheet" href="cvMobile.css" />
     <title>CV Pierre Chau</title>
     <!-- Fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
@@ -69,11 +69,13 @@
                 </div>
             </div>
             <!-- Ce code ci-dessous 
-                "div > div > div > li" ( li avec div pas compatible ),
+                "div > div > div > li" ( li avec div pas compatible )
+                affichent avec le validateur w3c : error 
+                ET pour
                 lang= en (a cause du lorem ipsum)
                 et
                 section class="xx"
-                affichent avec le validateur w3c : error 
+                affichent avec le validateur w3c : warning
                  -->
             <!--
             <div class="liste">
@@ -113,14 +115,13 @@
 
             <div class="moi">à propos de moi</div>
             <p>
-                "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Ancien boulanger-pâtissier en pleine reconversion professionnelle
+                depuis novembre 2017.<br>
+                J'ai choisi de m'orienter dans le domaine de l'informatique
+                plus précisément dans la création et le développement de sites web
+                car j'ai entendu que le secteur du web est un secteur prometteur
+                dans l'avenir, ce qui est forcément le cas,
+                avec les technologies du web qui évoluent très rapidement.
             </p>
 
             <div class="loisir">
@@ -136,28 +137,28 @@
         <div class="professionnel">
             <div class="center">
                 <div class="perso">
-                    <p><span>pierre</span> chau</p>
+                    <h1><span>pierre</span> chau</h1>
                     <div class="small">
                         <span>Ancien Boulanger-Pâtissier</span> en pleine reconversion professionnelle
                     </div>
                 </div> <!-- FIN DE div class="perso" -->
 
-                <div class="formation">
+                <section class="formation">
                     <div class="cone">
                         <i class="fas fa-graduation-cap"></i>
                         <h2>formation</h2>
                     </div>
 
                     <div>
-                        <div class="school">
-                            <div class="date">
+                        <div class="flexbox mobile school">
+                            <div class="date date-lg">
                                 <i class="far fa-dot-circle"></i>
                                 <p><strong>De Septembre 2009 à Juin 2011<br>
                                         Paris 19e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>CEPROC</h2>
+                                <h3>CEPROC</h3>
                                 <p>Baccalauréat Professionnel de Boulangerie-Pâtisserie</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -167,15 +168,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="school">
-                            <div class="date">
+                        <div class="flexbox mobile school">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2008 à Juin 2009<br>
                                         Paris 19e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>CEPROC</h2>
+                                <h3>CEPROC</h3>
                                 <p>Mention Complémentaire Pâtisserie</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -185,15 +186,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="school">
-                            <div class="date">
+                        <div class="flexbox mobile school">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2006 à Juin 2008<br>
                                         Paris 19e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>CEPROC</h2>
+                                <h3>CEPROC</h3>
                                 <p>Brevet des Etudes Professionnelles</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -203,15 +204,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="school">
-                            <div class="date">
+                        <div class="flexbox mobile school">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p><strong>De Septembre 2003 à Juin 2006<br>
                                         Paris 3e</strong>
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>Lycée Turgot</h2>
+                                <h3>Lycée Turgot</h3>
                                 <p>Niveau Baccalauréat Scientifique</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -222,17 +223,17 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- FIN DE div class="formation" -->
+                </section> <!-- FIN DE div class="formation" -->
 
-                <div class="experience">
+                <section class="experience">
                     <div class="cone">
                         <i class="fas fa-briefcase"></i>
                         <h2>expérience professionnelle</h2>
                     </div>
 
                     <div class="listeExp">
-                        <div class="exp">
-                            <div class="date">
+                        <div class="flexbox mobile exp">
+                            <div class="date date-dot">
                                 <i class="far fa-dot-circle"></i>
                                 <p>
                                     <strong>De Juin 2014 à Novembre 2017<br>
@@ -240,7 +241,7 @@
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>Le Fournil du Maine</h2>
+                                <h3>Le Fournil du Maine</h3>
                                 <p>Poste Tourier et Boulanger</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -250,8 +251,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="exp">
-                            <div class="date-lg">
+                        <div class="flexbox mobile exp">
+                            <div class="date date-lg">
                                 <i class="fas fa-circle"></i>
                                 <p>
                                     <strong>De Septembre 2011 à Novembre 2011<br>
@@ -259,7 +260,7 @@
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>Le Fournil du Maine</h2>
+                                <h3>Le Fournil du Maine</h3>
                                 <p>Poste Tourier</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -269,8 +270,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="exp">
-                            <div class="date">
+                        <div class="flexbox mobile exp">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p>
                                     <strong>De Septembre 2009 à Juin 2011<br>
@@ -278,7 +279,7 @@
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>Le Grenier à Pain</h2>
+                                <h3>Le Grenier à Pain</h3>
                                 <p>Apprenti Pâtissier</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -288,8 +289,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="exp">
-                            <div class="date">
+                        <div class="flexbox mobile exp">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p>
                                     <strong>De Septembre 2008 à Juin 2009<br>
@@ -297,7 +298,7 @@
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>DI.PRO.SUC.</h2>
+                                <h3>DI.PRO.SUC.</h3>
                                 <p>Apprenti Pâtissier</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -307,8 +308,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="exp">
-                            <div class="date">
+                        <div class="flexbox mobile exp">
+                            <div class="date date-nor">
                                 <i class="fas fa-circle"></i>
                                 <p>
                                     <strong>De Septembre 2007 à Juin 2008<br>
@@ -316,7 +317,7 @@
                                 </p>
                             </div>
                             <div class="ecole">
-                                <h2>Le Pralin</h2>
+                                <h3>Le Pralin</h3>
                                 <p>Apprenti Pâtissier</p>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -327,15 +328,15 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- FIN DE div class="experience" -->
+                </section> <!-- FIN DE div class="experience" -->
 
-                <div class="recommandation">
+                <section class="recommandation">
                     <div class="cone">
                         <i class="fas fa-pen-fancy"></i>
                         <h2>recommandations</h2>
                     </div>
 
-                    <div class="agence">
+                    <div class="flexbox agence">
                         <div class="name">
                             <h3>maxime orwellien</h3>
                             <span>Directeur, Mon agence</span><br>
@@ -350,7 +351,7 @@
                             <span>Email : name@gmail.com</span>
                         </div>
                     </div>
-                </div> <!-- FIN DE div class="recommandation" -->
+                </section> <!-- FIN DE div class="recommandation" -->
 
             </div> <!-- FIN DE div class="center" -->
 

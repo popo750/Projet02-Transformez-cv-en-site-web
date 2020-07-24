@@ -9,13 +9,6 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
 
 /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 @media all and (max-width: 650px) {
-    body {
-        width: auto;
-    }
-    
-    #container {
-        flex-direction: column;
-    }
 
     /* *************************************************
     * Div class="personnel"
@@ -25,50 +18,75 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         margin: 0;
         height: 200px;
     }
-    
-    .personnel picture > img {
+
+    .personnel picture>img {
         width: 100%;
         height: 100%;
         border: none;
         border-radius: 0;
-    } 
+    }
 
-    .personnel > .liste {
+    .personnel>.liste {
         margin-left: 10px;
     }
 
-    .personnel > .liste > div .web {
+    .personnel>.liste>div .web {
         margin-left: 50px;
     }
 
-    .personnel > .liste > div .skype {
+    .personnel>.liste>div .skype {
         margin-right: 50px;
     }
 
-    /* ************************************************************
-    * Div class="professionnel" > class center > class formation
-    ************************************************************ */
+    /* *************************************************
+    * Div class="professionnel"
+    ************************************************ */
+    .professionnel .center {
+        /* border: 3px solid olive; */
+        margin: 0 20px;
+    }
 
+    /* ***********************************************************
+    * Div class="professionnel" > class center > class formation
+    *********************************************************** */
+    /*
     .formation .school {
         margin: 0 20px;
     }
 
-    .formation .school .date,
+    .formation .school .date-nor,
+    .formation .school .date-lg,
     .formation .school .ecole {
         padding: 0 20px;
-    }
+    } */
 
-    /* ************************************************************
+    /* *************************************************************
     * Div class="professionnel" > class center > class experience
     ************************************************************* */
-
+    /*
     .experience .exp {
         margin: 0 20px;
     }
 
-    .experience .exp .date,
+    .experience .exp .date-nor,
     .experience .exp .date-lg,
     .experience .exp .ecole {
+        padding: 0 20px;
+    } */
+
+    /* ************************************************************
+     * Regroupement des propriétés css des class :
+     * class Formation ET class Experience
+     * PAR
+     * section .mobile et/ou .flexbox XXX
+     *********************************************************** */
+
+    section .mobile {
+        margin: 0 20px;
+    }
+
+    section .flexbox .date,
+    section .flexbox .ecole {
         padding: 0 20px;
     }
 

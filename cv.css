@@ -2,7 +2,6 @@ body {
     /* Enlever Padding et Margin */
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
 #container {
@@ -10,9 +9,20 @@ body {
 }
 
 /* *************************************************
+ * Generalites
+ ************************************************* */
+.moi,
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+/* *************************************************
  * Div class="personnel"
  ************************************************ */
 .personnel {
+    position: relative;
     background-color: #43A047;
     width: 30%;
 }
@@ -24,37 +34,35 @@ body {
     margin: 50px auto;
 }
 
-.personnel picture > img {
+.personnel picture>img {
     width: 150px;
     height: 150px;
     border: 3px solid #FB8C00;
     border-radius: 50%;
 }
 
-.personnel > .moi,
-.personnel > .loisir .moi {
+.personnel>.moi,
+.personnel>.loisir .moi {
     background-color: #3E2723;
     color: #FB8C00;
     padding: 10px 0;
-    text-transform: uppercase;
     text-align: center;
     font-weight: 700;
 }
 
-.personnel > .loisir {
+.personnel>.loisir {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 30%;
 }
 
-.personnel > .liste {
+.personnel>.liste {
     padding: 30px;
     list-style: none;
 }
 
-.personnel > p {
+.personnel>p {
     width: 80%;
     margin: 20px auto;
 }
@@ -87,166 +95,253 @@ body {
 
 /* ********************************************************
  * Div class="professionnel" > class center > class perso
- ******************************************************* */
-.perso p {
-    text-transform: uppercase;
+ ********************************************************* */
+.perso h1 {
     font-size: 50px;
+    font-weight: lighter;
+    margin-top: 50px;
 }
 
-.perso p > span {
+.perso h1>span {
     color: #FB8C00;
 }
 
 .perso .small {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     font-size: 1.3rem;
+    margin-bottom: 50px;
 }
 
-.perso .small > span {
+.perso .small>span {
     background: linear-gradient(to top, #FB8C00 0%, #FB8C00 2px, transparent 5px);
 }
 
-/* *************************************************************
- * Div class="professionnel" > class center > class formation
- ************************************************************ */
-.formation .cone {
+
+/* ************************************************************
+ * class Formation ET class Experience ET class recommandation
+ *********************************************************** */
+
+/* ****************************************************
+  * Regroupement de class formation, class experience
+  * ET class recommandation
+  * PAR la balise section pour la class cone
+  **************************************************** */
+/* Ancien code */
+/*
+ .formation .cone,
+ .experience .cone,
+ .recommandation .cone {
+     display: flex;
+     align-items: center;
+     border-bottom: 3px solid #FB8C00;
+     /* margin: Haut-bas px Left-Right px */
+    /*margin: 20px 0;
+ }*/
+
+section .cone {
     display: flex;
     align-items: center;
     border-bottom: 3px solid #FB8C00;
+    /* margin: Haut-bas px Left-Right px */
+    margin: 20px 0;
 }
 
-.formation .cone i {
+/* Ancien code */
+/*
+ .formation .cone i,
+ .experience .cone i,
+ .recommandation .cone i {
+     font-size: 40px;
+ } */
+
+section .cone i {
     font-size: 40px;
 }
 
-.formation .cone h2 {
+/* Ancien code */
+/*
+ .formation .cone h2,
+ .experience .cone h2,
+ .recommandation .cone h2 {
+     margin-left: 20px;
+ } */
+
+section .cone h2 {
     margin-left: 20px;
-    text-transform: uppercase;
 }
 
-.formation .school {
+/* *************************************************
+ * Regroupement des class school, exp ET agence
+ * PAR class flexbox
+ ************************************************* */
+/* Ancien code */
+/*
+ .school,
+  .exp,
+ .agence {
+     display: flex;
+ } */
+
+.flexbox {
     display: flex;
 }
 
-.formation .school .date {
+.agence {
+    list-style: none;
+}
+
+/* *************************************************
+ * Regroupement des class :
+ * .formation .school .date, .date-lg
+ * ET
+ * ..experience .exp .date-dot, .date, .date-lg
+ * PAR
+ * section .flexbox .date
+ ************************************************* */
+/* Ancien code */
+/*
+ .formation .school .date-nor,
+ .formation .school .date-lg,
+ .experience .exp .date-dot,
+ .experience .exp .date-nor,
+ .experience .exp .date-lg {
+     width: 35%;
+ } */
+
+section .flexbox .date {
     width: 35%;
 }
 
-.formation .school .date i {
-    margin-top: 17px;
-    margin-right: 10px;
-    float: left;
-}
+/* *******************************************************************
+  * Premier Regroupement
+  * des propriétés des différents icones des différents class .date :
+  *
+  * .formation .school .date-lg .fa-dot-circle,
+  * .formation .school .date .fa-circle,
+  * .experience .exp .date-dot .fa-dot-circle,
+  * .experience .exp .date .fa-circle,
+  * .experience .exp .date-lg .fa-circle
+  ******************************************************************* */
+/* ************************************************** 
+ * Ancien code 01 
+ **************************************************  */
+/*
+ .formation .school .date-lg .fa-dot-circle,
+ .formation .school .date .fa-circle,
+ .experience .exp .date-dot .fa-dot-circle,
+ .experience .exp .date .fa-circle,
+ .experience .exp .date-lg .fa-circle {
+     color: #FB8C00;
+ }*/
+/*
+ .experience .exp .date-dot .fa-dot-circle,
+ .experience .exp .date .fa-circle,
+ .experience .exp .date-lg .fa-circle {
+     margin-top: 20px;
+ }*/
 
-.formation .school .date .fa-dot-circle,
-.formation .school .date .fa-circle {
-    color: #FB8C00;
-}
 
-.formation .school .date .fa-dot-circle {
-    font-size: 20px;
-}
-
-.formation .school .date .fa-circle {
-    font-size: 10px;
-}
-
-.formation .school .date p {
-    float: right;
-}
-
-.formation .school .ecole {
-    padding: 0 100px;
-    width: 60%;
-}
-
-/* **************************************************************
- * Div class="professionnel" > class center > class experience
- ************************************************************* */
-.experience .cone {
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #FB8C00;
-}
-
-.experience .cone i {
-    font-size: 40px;
-}
-
-.experience .cone h2 {
-    margin-left: 20px;
-    text-transform: uppercase;
-}
-
-.experience .exp {
-    display: flex;
-}
-
-.experience .exp .date,
-.experience .exp .date-lg {
-    width: 35%;
-}
-
-.experience .exp .date i,
+/* ************************************************** 
+ * Ancien code 02 provenant de Ancien code 01
+ ************************************************** */
+/*
+.formation .school .date-nor i,
+.formation .school .date-lg i,
+.experience .exp .date-dot i,
+.experience .exp .date-nor i,
 .experience .exp .date-lg i {
     margin-top: 17px;
     float: left;
-}
+    color: #FB8C00;
+} */
 
-.experience .exp .date .fa-dot-circle,
-.experience .exp .date .fa-circle,
-.experience .exp .date-lg .fa-circle {
-    margin-top: 20px;
-    font-size: 10px;
+section .flexbox .date i {
+    margin-top: 17px;
+    float: left;
     color: #FB8C00;
 }
 
-.experience .exp .date .fa-dot-circle {
+/* ******************************************
+  * Différents font-size pour les icones
+  * dot-circle ET circle
+  ****************************************** */
+/* Ancien code */
+/*
+.formation .school .date-lg .fa-dot-circle,
+.experience .exp .date-dot .fa-dot-circle {
     font-size: 20px;
 }
 
-.experience .exp .date p,
-.experience .exp .date-lg p {
+.formation .school .date-nor .fa-circle,
+.experience .exp .date-nor .fa-circle,
+.experience .exp .date-lg .fa-circle {
+    font-size: 10px;
+} */
+
+section .flexbox .date .fa-dot-circle {
+    font-size: 20px;
+}
+
+section .flexbox .date .fa-circle {
+    font-size: 10px;
+}
+
+/* ***********************************************
+  * Regroupement des différents class date-xx p
+  * pour la propriété :
+  * float: right
+  * AVEC
+  * ses différentes valeurs du margin-right
+  *********************************************** */
+/* Ancien code */
+/*
+.formation .school .date-lg p,
+.formation .school .date-nor p,
+.experience .exp .date-dot p,
+.experience .exp .date-lg p,
+.experience .exp .date-nor p {
     float: right;
+} */
+
+section .flexbox .date p {
+    float: right;
+}
+
+.formation .school .date-lg p {
+    margin-right: -12px;
+}
+
+.formation .school .date-nor p,
+.experience .exp .date-nor p {
+    margin-right: -5px;
+}
+
+.experience .exp .date-dot p {
+    margin-right: -10px;
 }
 
 .experience .exp .date-lg p {
     margin-right: -40px;
 }
 
+/* ***************************************************
+ * Regroupement des class finissant par class ecole
+ * pour ces deux propriétés css
+ *************************************************** */
+/* Ancien code */
+/*
+.formation .school .ecole,
 .experience .exp .ecole {
     padding: 0 100px;
     width: 60%;
-}
+} */
 
-/* ****************************************************************
- * Div class="professionnel" > class center > class recommandation
- *************************************************************** */
- .recommandation .cone {
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #FB8C00;
-}
-
-.recommandation .cone i {
-    font-size: 40px;
-}
-
-.recommandation .cone h2 {
-    margin-left: 20px;
-    text-transform: uppercase;
-}
-
-.agence {
-    display: flex;
-    list-style: none;
+section .flexbox .ecole {
+    padding: 0 100px;
+    width: 60%;
 }
 
 .agence div {
     width: 40%;
     height: 200px;
-}
-
-.agence div h3 {
-    text-transform: uppercase;
 }
