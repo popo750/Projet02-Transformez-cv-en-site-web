@@ -308,7 +308,7 @@ section .flexbox .date p {
 }
 
 .formation .school .date-lg p {
-    margin-right: -12px;
+    margin-right: 20px;
 }
 
 .formation .school .date-nor p,
