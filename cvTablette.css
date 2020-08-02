@@ -162,7 +162,7 @@ Pour voir en version MOBILE, aller dans "Outils de développement" puis pour les
         border-bottom: 3px solid #FB8C00;
     } */
 
-    .formation .school:not(:nth-child(4)) {
+    .formation .school:not(:nth-child(5)) {
         border-bottom: 3px solid #FB8C00;
     }
 
